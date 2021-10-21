@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Grid, Typography, Divider } from '@mui/material';
 import { Link } from 'gatsby';
 import Header from '../components/Header';
+import Contacto from '../components/Contacto';
 
 export default function Index() {
   return (
@@ -19,6 +20,7 @@ export default function Index() {
         <link rel="stylesheet" href="/css/global.css" />
         <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/landing.css" />
+        <link rel="stylesheet" href="/css/contact.css" />
       </Helmet>
       <Grid container direction="column" alignItems="center">
         <Header />
@@ -98,12 +100,80 @@ export default function Index() {
           </Grid>
         </Grid>
         <Divider className="divider" />
-        <Grid>
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          className="values"
+        >
           <Typography variant="h2" className="title">
             Nuestros valores
           </Typography>
-          <Grid container direction="row" justifyContent="center"></Grid>
+          <Grid container direction="row" justifyContent="center">
+            <Grid
+              item
+              container
+              direction="column"
+              xs={12}
+              md={3}
+              alignItems="center"
+            >
+              <svg
+                className="value-image compromiso"
+                width="210px"
+                height="210px"
+              />
+              <Typography className="value-title">Compromiso</Typography>
+            </Grid>
+            <Grid
+              item
+              container
+              direction="column"
+              xs={12}
+              md={3}
+              alignItems="center"
+            >
+              <svg
+                className="value-image solidaridad"
+                width="210px"
+                height="210px"
+              />
+              <Typography className="value-title">Solidaridad</Typography>
+            </Grid>
+            <Grid
+              item
+              container
+              direction="column"
+              xs={12}
+              md={3}
+              alignItems="center"
+            >
+              <svg
+                className="value-image respeto"
+                width="210px"
+                height="210px"
+              />
+              <Typography className="value-title">Respeto</Typography>
+            </Grid>
+            <Grid
+              item
+              container
+              direction="column"
+              xs={12}
+              md={3}
+              alignItems="center"
+            >
+              <svg
+                className="value-image integridad"
+                width="210px"
+                height="210px"
+              />
+              <Typography className="value-title">Integridad</Typography>
+            </Grid>
+          </Grid>
         </Grid>
+        <Divider className="divider" />
+        <Contacto />
       </Grid>
     </div>
   );

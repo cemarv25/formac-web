@@ -52,6 +52,37 @@
   color: white;
 }
 
+.values {
+  margin-bottom: 2rem;
+}
+
+.value-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.compromiso {
+  background-image: url('/img/compromiso.svg');
+}
+
+.solidaridad {
+  background-image: url('/img/solidaridad.svg');
+}
+
+.respeto {
+  background-image: url('/img/respeto.svg');
+}
+
+.integridad {
+  background-image: url('/img/integridad.svg');
+}
+
+.value-title {
+  color: var(--main-color);
+  font-size: 1.5625rem;
+  font-weight: 600;
+}
+
 .block-text,
 .block-text-small {
   color: white;
