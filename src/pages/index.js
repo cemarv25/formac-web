@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet';
 import { Grid, Typography, Divider } from '@mui/material';
 import { Link } from 'gatsby';
 import Header from '../components/Header';
-import '../styles/global.css';
-import '../styles/landing.css';
 
 export default function Index() {
   return (
@@ -18,6 +16,9 @@ export default function Index() {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/landing.css" />
       </Helmet>
       <Grid container direction="column" alignItems="center">
         <Header />
