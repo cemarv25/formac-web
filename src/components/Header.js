@@ -13,7 +13,7 @@ import {
   Box,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { useIsMobile } from '../hooks';
 
 const Header = ({ activeTab }) => {
@@ -59,7 +59,13 @@ const Header = ({ activeTab }) => {
   );
 
   const navBar = () => (
-    <Grid item xs={8} container justifyContent="space-evenly">
+    <Grid
+      item
+      xs={8}
+      container
+      justifyContent="space-evenly"
+      style={{ height: '100%' }}
+    >
       <Link
         to="/nosotros"
         className="header-link"
@@ -114,7 +120,12 @@ const Header = ({ activeTab }) => {
       alignItems={isMobile ? 'center' : 'flex-end'}
       className="header"
     >
-      <Grid item xs={isMobile ? 7 : 4} className="header-logo" />
+      <Grid
+        item
+        xs={isMobile ? 7 : 4}
+        className="header-logo"
+        onClick={() => navigate('/')}
+      />
       {isMobile ? menuButton() : navBar()}
       <Drawer anchor="right" open={drawer} onClose={() => toggleDrawer(false)}>
         {list()}

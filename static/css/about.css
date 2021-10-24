@@ -1,0 +1,15 @@
+:root {
+  --main-color: hsl(135, 54%, 21%);
+  --main-color-transparent: hsla(135, 54%, 21%, 70%);
+}
+
+.about-header {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-align: center;
+}
+
+.formac {
+  color: var(--main-color);
+}

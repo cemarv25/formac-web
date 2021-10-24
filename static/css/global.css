@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+.title {
+  color: #47525e;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  margin-bottom: 4rem;
+}
