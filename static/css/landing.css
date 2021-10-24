@@ -4,18 +4,13 @@
 }
 
 .banner {
-  background-image: url('/img/Proyecto_Cosechas_2-wide.jpg');
+  background-image: url("/img/Proyecto_Cosechas_2-wide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 600px;
   padding: 0 6.25%;
   overflow-y: auto;
-}
-
-.divider {
-  margin: 2.43rem;
-  width: 90%;
 }
 
 .white {
@@ -54,19 +49,19 @@
 }
 
 .compromiso {
-  background-image: url('/img/compromiso.svg');
+  background-image: url("/img/compromiso.svg");
 }
 
 .solidaridad {
-  background-image: url('/img/solidaridad.svg');
+  background-image: url("/img/solidaridad.svg");
 }
 
 .respeto {
-  background-image: url('/img/respeto.svg');
+  background-image: url("/img/respeto.svg");
 }
 
 .integridad {
-  background-image: url('/img/integridad.svg');
+  background-image: url("/img/integridad.svg");
 }
 
 .value-title {
@@ -137,6 +132,6 @@
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }

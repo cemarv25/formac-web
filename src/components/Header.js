@@ -8,7 +8,6 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemText,
   ListItemButton,
   Box,
 } from '@mui/material';
