@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useMediaQuery } from '../hooks';
 
-const Carousel = ({ images, name }) => {
+const Carousel = ({ images }) => {
   const isLarge = useMediaQuery('(min-width: 700px)');
   const carouselRef = useRef();
   let pos = { top: 0, left: 0, x: 0, y: 0 };

@@ -25,6 +25,32 @@
   margin-bottom: 2rem;
 }
 
+.inner-acc {
+  border: 1px solid gray;
+  width: 90%;
+}
+
+.inner-acc:not(:last-child) {
+  border-bottom: 0;
+}
+
+.inner-acc::before {
+  display: none;
+}
+
+.inner-acc-sum {
+  flex-direction: row-reverse;
+}
+
+.inner-acc-sum.Mui-expanded {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.inner-acc-det {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 0 !important;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -34,12 +60,16 @@
 }
 
 .MuiAccordion-root::before {
-  height: 0;
+  display: none;
 }
 
 .MuiAccordionDetails-root {
   padding: 3rem;
   border-radius: 10px;
+}
+
+.MuiAccordionSummary-root .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(90deg);
 }
 
 .green-bg {
