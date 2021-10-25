@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
         <link rel="stylesheet" href="/css/layout.css" />
         <link rel="stylesheet" href="/css/landing.css" />
         <link rel="stylesheet" href="/css/about.css" />
+        <link rel="stylesheet" href="/css/projects.css" />
       </Helmet>
       <Grid container direction="column" alignItems="center">
         <Header />

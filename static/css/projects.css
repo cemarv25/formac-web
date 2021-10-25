@@ -1,0 +1,75 @@
+.accordion {
+  margin-bottom: 0.5rem;
+}
+
+.accordion-summary {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.accordion-summary-text {
+  font-weight: 600;
+}
+
+.accordion-details-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.accordion-details-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.26em;
+  margin-bottom: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white {
+  color: white;
+}
+
+.MuiAccordion-root::before {
+  height: 0;
+}
+
+.MuiAccordionDetails-root {
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.green-bg {
+  background-color: var(--main-color-transparent);
+}
+
+.green-bg p {
+  color: white;
+}
+
+.green-bg .accordion-details-text {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 750px) and (min-width: 400px) {
+  .accordion-details-title {
+    font-size: 2.5rem;
+  }
+
+  .accordion-details-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .accordion-details-title {
+    font-size: 2rem;
+  }
+
+  .accordion-details-text {
+    font-size: 0.8rem;
+  }
+}

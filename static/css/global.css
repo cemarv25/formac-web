@@ -5,7 +5,7 @@
 
 .title {
   color: #47525e;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: 0.26em;
   margin-bottom: 4rem;
@@ -14,4 +14,28 @@
 .divider {
   margin: 2.43rem 1rem;
   width: 90%;
+}
+
+.carousel-container {
+  width: 95%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.carousel-cell {
+  display: inline-block;
+  cursor: grab;
+  height: 250px;
+  margin-right: 1rem;
+}
+
+.carousel-image {
+  height: 250px;
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-cell,
+  .carousel-image {
+    height: 100px;
+  }
 }
